@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from "../styles/Home.module.css"
+import Link from 'next/link'
 function Home() {
   return (
     <main className={`${styles.main}`}>
@@ -12,6 +13,10 @@ function Home() {
   <p>Scan the QR code to visit Frontend Mentor and take your codding skills to the next level</p>
     </div>
   
+    <div className={`${styles.mention}`}>
+    Challenge by <Link href="https://www.frontendmentor.io/profile/faisalahmed11" target="_blank">Frontend Mentor</Link>. 
+    Coded by <Link href="https://twitter.com/FaisalAhmed_01">Faisal Ahmed</Link>.
+  </div>
     </main>
   )
 }

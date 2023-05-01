@@ -2,6 +2,7 @@
 
 .main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: hsl(212, 45%, 89%);
@@ -9,9 +10,9 @@
 }
 .qrCode {
   display: block;
-  height: 300px;
+  height: 310px;
   width: auto;
-  margin: 20px;
+  margin: 16px;
   border-radius: 15px;
 }
 
@@ -19,7 +20,7 @@
   text-align: center;
   font-family: Outfit, sans-serif;
   border-radius: 15px;
-  width: 340px;
+  width: 342px;
   background-color: hsl(0, 0%, 100%);
 box-shadow: 0px 0px 6px lightgray;
 }
@@ -33,4 +34,8 @@ box-shadow: 0px 0px 6px lightgray;
   color: hsl(220, 15%, 55%);
   margin: 15px 40px 30px 40px;
   font-size: 15px;
+}
+
+.mention{
+    margin:10px;
 }
