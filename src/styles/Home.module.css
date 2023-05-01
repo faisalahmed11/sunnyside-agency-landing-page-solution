@@ -10,7 +10,7 @@
 }
 .qrCode {
   display: block;
-  height: 305px;
+  height: 300px;
   width: auto;
   margin: 16px;
   border-radius: 15px;
@@ -18,10 +18,10 @@
 
 .card {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   font-family: Outfit, sans-serif;
   border-radius: 15px;
-  width: 337px;
+  width: 332px;
   background-color: hsl(0, 0%, 100%);
 box-shadow: 0px 0px 6px lightgray;
 }
