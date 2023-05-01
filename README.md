@@ -24,7 +24,7 @@ This project is about building a simple card with a QR code, title and body text
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./public/screenshot.png)
 
 ### Links
 
