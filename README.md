@@ -29,7 +29,7 @@ This project is about building a simple two-sided-card with result and summary s
 
 ### Links
 
-- Live Site URL: [https://frontend-qr-challenge.vercel.app/](https://frontend-summary-challenge.vercel.app/)
+- Live Site URL: [https://frontend-qr-challenge.vercel.app/](https://result-summary-challenge.vercel.app/)
 
 ## My process
  Using HTML, CSS and JS Learnings, I start implementing UI design from the outer most main components like container and section then putting all the sub-components, then comes the most interesting part you might have guessed it is called CSS Styling.
