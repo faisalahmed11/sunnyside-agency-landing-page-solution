@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap");
+
+.main {
+  font-size: 18px;
+  font-family: "HanKen Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  cursor:default;
+}
+
+.mainCard {
+  width: 690px;
+  text-align: center;
+  height: 460px;
+  box-shadow: 0px 0px 30px 2px hsl(221, 100%, 96%);
+  border-radius: 15px;
+}
+.resultCard {
+  float: left;
+  color: hsl(241, 100%, 89%);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  height: 100%;
+  width: 50%;
+  background-image: linear-gradient(
+    hsl(252, 100%, 67%) 0%,
+    hsl(241, 81%, 54%) 100%
+  );
+  /* background-color: blue; */
+}
+
+.resultCardTitle {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.resultCardCircle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+}
+.resultCardCircle b {
+  font-size: 55px;
+  font-weight: 900;
+  color: white;
+}
+
+.resultCardGreat {
+  color: white;
+  font-size: 27px;
+}
+.resultCardScore {
+  margin: 0px 50px;
+}
+
+.summary {
+  display: flex;
+align-items: center;
+  flex-direction: column;
+
+}
+.summaryTitle{
+font-weight: 700;
+margin: 30px 0px 35px 15px;
+font-size: 1.3em;
+align-self: flex-start;
+
+}
+
+.summaryContainer{
+  width: 100%;
+}
+
+.summaryContainer div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 0px 30px 13px 30px;
+  border-radius: 10px;
+}
+.iconContainer{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  gap: 10px;
+}
+
+.light{
+  opacity: 0.7;
+}
+
+
+.summaryContainer div:nth-child(1){
+  background-color: hsla(0, 100%, 67%,0.08);
+ 
+}
+.summaryContainer div:nth-child(1) .iconContainer{
+  color: hsl(0, 100%, 67%);
+}
+
+.summaryContainer div:nth-child(2){
+  background-color: hsla(39, 100%, 56%,0.08);
+ 
+}
+.summaryContainer div:nth-child(2) .iconContainer{
+  color: hsl(39, 100%, 56%);
+}
+
+.summaryContainer div:nth-child(3){
+  background-color: hsla(166, 100%, 37%,0.08);
+ 
+}
+.summaryContainer div:nth-child(3) .iconContainer{
+  color: hsl(166, 100%, 37%);
+}
+.summaryContainer div:nth-child(4){
+  background-color: hsla(234, 85%, 45%,
+  0.08);
+ 
+}
+.summaryContainer div:nth-child(4) .iconContainer{
+  color: hsl(234, 85%, 45%)
+  ;
+}
+
+
+.summary button{
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  margin-top: 30px;
+  font-size: 15px;
+  color: white;
+  background-color:  hsl(224, 30%, 27%);
+  padding:14px 31%;
+
+}
+.summary button:hover{
+  background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+
+.lastRow{
+  text-align: center;
+  margin:10px
+}
+
+
+@media screen and (max-width:375px){
+  /* .main{
+    flex-direction: column;
+  } */
+  .mainCard {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    /* text-align: center; */
+    height: 780px;
+    /* box-shadow: 0px 0px 30px 2px hsl(221, 100%, 96%); */
+    /* border-radius: 15px; */
+  }
+  
+  .summary{
+  position: relative;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .summaryTitle{
+/* position: relative; */
+    /* display: inline-block; */
+    /* margin:20px; */
+    text-align: left;
+
+
+    
+
+  }
+  .resultCard{
+    width: 100%;
+    height: 49%;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 40px 40px;
+    /* display: none; */
+   /* display: block; */
+   /* position: absolute; */
+    /* top: 0; */
+    /* width: 100%; */
+  }
+.resultCardCircle{
+width: 150px;
+height: 150px;
+}
+.resultCardCircle b{
+  font-size: 50px;
+}
+
+.lastRow{
+  /* text-align: center; */
+  margin-top: 40px;
+}
+  }
+  

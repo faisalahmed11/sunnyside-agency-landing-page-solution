@@ -18,28 +18,29 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 
 ## Overview
-This is a practice based front end project, one can done it with plane HTML, CSS and js or using frameworks.
-This project is about building a simple card with a QR code, title and body text, images like qr and favicon are given, more importantly the finial design is also given.
+This is a practice based front end project, one can do it with plane HTML, CSS and js or using frameworks.
+This project is about building a simple two-sided-card with result and summary sections, result sections contains score out of 100 and a tag with its guideline text, while summary shows scores of each category. images like qr and favicon and icons of the categories are given, more importantly the finial design is also given.
 
 
 ### Screenshot
 
-![](./public/screenshot.png)
+![](./public/screenshot1.png)
+![](./public/screenshot2.png)
 
 ### Links
 
-- Live Site URL: [https://frontend-qr-challenge.vercel.app/](https://frontend-qr-challenge.vercel.app/)
+- Live Site URL: [https://frontend-qr-challenge.vercel.app/](https://frontend-summary-challenge.vercel.app/)
 
 ## My process
- Using HTML, CSS and JS Learnings it became clear to built it in mind first.
-At the first step, I created its HTML in the index.js pages file then adding
-it soul "CSS" back in its body, colors, images and design was given already so it became easy to full it at first try.
+ Using HTML, CSS and JS Learnings, I start implementing UI design from the outer most main components like container and section then putting all the sub-components, then comes the most interesting part you might have guessed it is called CSS Styling.
+off course, it backs life in it, colors, images and design was given already so it became easy to full fill it.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Gradient
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
@@ -51,4 +52,4 @@ it soul "CSS" back in its body, colors, images and design was given already so i
 
 ## Acknowledgments
 
-I Would like to thank a lot to the frontendmentor.io for such a amazing work towards improving students skills with such a amazing and interesting practical challenges and also providing all the support with project material, solution and give connecting us with our peers.
+I Would like to thank a lot to the Frontend Mentor team for such a amazing work towards improving students skills with such a amazing and interesting practical challenges and also providing all the support with project material, solution and connecting us with our peers.
