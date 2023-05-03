@@ -3,3 +3,11 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+.main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+  }
