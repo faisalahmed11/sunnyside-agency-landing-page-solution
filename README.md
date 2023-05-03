@@ -30,7 +30,7 @@ Images of Product, favicon and icons are given, more importantly the finial desi
 
 ### Links
 
-- Live Site URL: [https://interactive-rating-challengee.vercel.app/](https://interactive-rating-challengee.vercel.app/)
+- Live Site URL: [https://interactive-rating-component-challengee.vercel.app/](https://interactive-rating-component-challengee.vercel.app/)
 
 ## My process
  Using HTML, CSS and JS Learnings, I start implementing UI design from the outer most main components like container and section then putting all the sub-components, and then comes the most interesting part you might have guessed, it is called CSS Styling.
