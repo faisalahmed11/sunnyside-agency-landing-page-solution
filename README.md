@@ -1,6 +1,6 @@
 # Frontend Mentor - QR code component solution
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -18,21 +18,23 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 
 ## Overview
-This is a practice based front end project, one can do it with plane HTML, CSS and js or using frameworks.
-This project is about building a simple two-sided-card with result and summary sections, result sections contains score out of 100 and a tag with its guideline text, while summary shows scores of each category. images like qr and favicon and icons of the categories are given, more importantly the finial design is also given.
+This is a practice based front end project, can be done with vanilla HTML, CSS and js or using frameworks.
+This project is about building a simple responsive product preview card .
+with two sections one is about its image and other side is about its details. 
+Images of Product, favicon and icons are given, more importantly the finial design is also given.
 
 
 ### Screenshot
 
-![](./public/screenshot1.png)
-![](./public/screenshot2.png)
+![](./public/1.png)
+![](./public/2.png)
 
 ### Links
 
-- Live Site URL: [https://frontend-qr-challenge.vercel.app/](https://result-summary-challengee.vercel.app/)
+- Live Site URL: [https://product-preview-challenge.vercel.app/](https://product-preview-challenge.vercel.app/)
 
 ## My process
- Using HTML, CSS and JS Learnings, I start implementing UI design from the outer most main components like container and section then putting all the sub-components, then comes the most interesting part you might have guessed it is called CSS Styling.
+ Using HTML, CSS and JS Learnings, I start implementing UI design from the outer most main components like container and section then putting all the sub-components, and then comes the most interesting part you might have guessed, it is called CSS Styling.
 off course, it backs life in it, colors, images and design was given already so it became easy to full fill it.
 
 ### Built with
@@ -40,7 +42,6 @@ off course, it backs life in it, colors, images and design was given already so 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Gradient
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
