@@ -1,68 +1,48 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../styles/Home.module.css";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+
 function Home() {
   return (
     <main className={`${styles.main}`}>
       <div className={`${styles.card}`}>
-        <div className={`${styles.imageContainer}`}>
-          <Image
-            className={`${styles.image}`}
-            src={"/image-equilibrium.jpg"}
-            alt="equilibrium image"
-            width={300}
-            height={300}
-          />
-          <div className={`${styles.hoverIcon}`}>
-            <Image
-              src={"/icon-view.svg"}
-              alt="view icon"
-              width={42}
-              height={42}
-            />
-          </div>
-        </div>
-        <p className={`${styles.title}`}>Equilibrium #3429</p>
-        <p className={`${styles.bodyText}`}>
-          Our Equilibrium collection promotes balance and calm
-        </p>
-        <div className={`${styles.priceContainer}`}>
-          <div>
-            <Image
-              src={"/icon-ethereum.svg"}
-              alt="eth icon"
-              width={13}
-              height={19}
-            />{" "}
-            <p>0.041ETH</p>
-          </div>
-          <div>
-            <Image
-              src={"/icon-clock.svg"}
-              alt="clock icon"
-              width={18}
-              height={18}
-            />
-            <p>3 days left</p>
-          </div>
-        </div>
-        <div className={`${styles.hr}`} />
-        <div className={`${styles.avatarContainer}`}>
-          <Image
-            className={`${styles.avatar}`}
-            src={"/image-avatar.png"}
-            alt="avatar"
-            width={32}
-            height={32}
-          />{" "}
-          <p>
-            Creation of{" "}
-            <Link href={"/"} className={`${styles.avatarLink}`}>
-              Jules Wyvern
-            </Link>
+        <Image
+          className={`${styles.hero}`}
+          src={"/illustration-hero.svg"}
+          width={500}
+          height={500}
+          alt="background-pattern"
+        />
+        <section className={`${styles.bodySection}`}>
+          <p className={`${styles.cardTitle}`}>Order Summary</p>
+          <p className={`${styles.cardBodyText}`}>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
           </p>
-        </div>
+          <div className={`${styles.planContainer}`}>
+            <div className={`${styles.plan2ndContainer}`}>
+              <Image
+                src={"/icon-music.svg"}
+                alt="music icon"
+                width={50}
+                height={50}
+              />
+
+              <div className={`${styles.planSubContainer}`}>
+                <p className={`${styles.planText1}`}>Annual Plan</p>
+                <p className={`${styles.planText2}`}>$59.99/year</p>
+              </div>
+            </div>
+            <Link className={`${styles.changeLink}`} href={"/"}>
+              Change
+            </Link>
+          </div>
+          <button className={`${styles.proceedButton}`}>
+            Proceed to Payment
+          </button>
+          <button className={`${styles.cancelButton}`}>Cancel Order</button>
+        </section>
         <p className={`${styles.reference}`}>
           Challenge by{" "}
           <Link

@@ -1,6 +1,6 @@
-# Frontend Mentor - NFT preview card component solution
+# Frontend Mentor - Order summary card solution
 
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -17,22 +17,21 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Overview
 
-This is a practice based front end project, can be done with vanilla HTML, CSS and js or using frameworks.
-This project is about building a simple responsive NFT-preview-component-card. with some user interactions like clicking links via title or image.
+This is a practice based front end project, can be completed with vanilla HTML, CSS and js or using frameworks.
+This project is about building a simple responsive order-summary-component. with some user interactions like hovering and, clicking links.
 Images of Product, favicon and icons are given, more importantly the finial design is also given.
 
 ### Screenshot
 
 ![](./public/1.png)
-![](./public/2.png)
 
 ### Links
 
-- Live Site URL: [https://nft-prview-component-challengee.vercel.app/](https://interactive-rating-component-challengee.vercel.app/)
+- Live Site URL: [https://order-summary-component-challengee.vercel.app/](https://order-summary-component-challengee.vercel.app/)
 
 ## My process
 
-Using HTML, CSS and JS Learnings, I start implementing UI design from the outer most main components like container and section then putting all the sub-components, and then comes the most interesting part you might have guessed, it is called CSS Styling.
+Using HTML, CSS and JS Learnings, I started implementing UI design from the outer most container, matching the widths and heights of the different components. then putting all the sub-components, and after this, comes the most interesting part you might have guessed, it is called CSS Styling.
 off course, it backs life in it, colors, images and design was given already so it became easy to full fill it.
 
 ### Built with

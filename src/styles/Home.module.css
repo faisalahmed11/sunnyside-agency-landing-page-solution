@@ -1,104 +1,120 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
 .main {
+  background: hsl(225, 100%, 94%) url("/pattern-background-desktop.svg")
+    no-repeat;
+  background-size: contain;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(217, 54%, 11%);
-  color: white;
   cursor: default;
 }
+
 .card {
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 348px;
-  height: 585px;
-  box-sizing: border-box;
-  padding: 25px;
-  background-color: hsl(216, 50%, 16%);
-  border-radius: 15px;
-  font-size: 18px;
-  font-family: Outfit, sans-serif;
+  width: 450px;
+  height: 695px;
+  font-family: "Red Hat Display", sans-serif;
 }
-.imageContainer {
-  position: relative;
-  cursor: pointer;
-}
-.image {
-  border-radius: 10px;
+
+.hero {
   width: 100%;
   height: auto;
-  cursor: pointer;
+  border-radius: 20px 20px 0px 0px;
 }
-.hoverIcon {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 98.5%;
-  top: 0px;
-  border-radius: 10px;
-  background-color: hsla(178, 100%, 50%, 0.5);
-}
-.imageContainer:hover .hoverIcon {
+.bodySection {
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 5px 55px;
+  background-color: hsl(225, 100%, 98%);
+  color: hsl(224, 23%, 45%);
+  border-radius: 0px 0px 20px 20px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0px 0px 30px hsla(224, 23%, 55%, 0.4);
 }
 
-.title {
-  cursor: pointer;
-  font-size: 22px;
-  font-weight: 600;
+.cardTitle {
+  text-shadow: 0px 0px 1px hsl(223, 47%, 23%);
+  font-size: 30px;
+  font-weight: 900 !important;
+  color: hsl(223, 47%, 23%);
 }
 
-.title:hover {
-  color: hsl(178, 100%, 50%);
+.cardBodyText {
+  margin: -20px 0px;
+  font-size: 16px;
+  line-height: 23px;
 }
-.bodyText {
-  color: hsl(215, 51%, 70%);
-}
-.hr {
-  height: 1px;
-  background-color: #aaa4;
-}
-.priceContainer {
-  width: 100%;
+
+.planContainer {
   display: flex;
+  background-color: hsla(225, 100%, 92%, 0.3);
+  width: 100%;
   justify-content: space-between;
-}
-.priceContainer div {
-  display: flex;
   align-items: center;
-  gap: 10px;
+  padding: 20px;
+  border-radius: 15px;
 }
 
-.priceContainer div:nth-child(1) {
-  color: hsl(178, 100%, 50%);
-  font-weight: 600;
-}
-.priceContainer div:nth-child(2) {
-  color: hsl(215, 51%, 70%);
-}
-.avatarContainer {
+.plan2ndContainer {
   display: flex;
   align-items: center;
-  gap: 15px;
-  color: hsl(215, 51%, 70%);
+  gap: 20px;
 }
-.avatar {
-  border: 1px solid white;
-  border-radius: 50%;
+
+.planText1 {
+  font-size: 17px;
+  color: hsl(223, 47%, 23%);
+
+  font-weight: 700;
 }
-.avatarLink {
-  color: white;
+
+.changeLink {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(245, 75%, 48%);
+}
+.changeLink:hover {
+  color: hsl(267, 38%, 60%);
   text-decoration: none;
-  margin-left: 3px;
 }
-.avatarLink:hover {
-  color: hsl(178, 100%, 50%);
+.proceedButton {
+  box-sizing: content-box;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: hsl(245, 75%, 52%);
+}
+
+.proceedButton:hover {
+  background-color: hsl(251, 43%, 55%);
+  box-shadow: 10px 10px 15px hsla(251, 43%, 55%, 0.4);
+}
+
+.cancelButton {
+  cursor: pointer;
+  font-weight: 900 !important;
+  font-size: 14px;
+  color: hsl(224, 23%, 40%);
+  background-color: transparent;
+  border: none;
+}
+
+.cancelButton:hover {
+  color: hsl(223, 47%, 23%);
+  text-shadow: 0px 0px 1px hsl(223, 47%, 23%);
 }
 
 .reference {
@@ -107,13 +123,25 @@
   left: 0px;
   bottom: -50px;
 }
-.link {
-  color: white;
-}
 
 @media screen and (max-width: 375px) {
+  .main {
+    background: hsl(225, 100%, 94%) url("/pattern-background-mobile.svg")
+      no-repeat;
+  }
   .card {
     width: 330px;
-    height: 545px;
+    height: 560px;
+  }
+
+  .cardTitle {
+    font-size: 23px;
+  }
+  .cardBodyText {
+    font-size: 15px;
+  }
+
+  .bodySection {
+    padding: 0px 40px;
   }
 }
