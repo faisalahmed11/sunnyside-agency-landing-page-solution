@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+  color: white;
+  cursor: default;
+}
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 348px;
+  height: 585px;
+  box-sizing: border-box;
+  padding: 25px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: Outfit, sans-serif;
+}
+.imageContainer {
+  position: relative;
+  cursor: pointer;
+}
+.image {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.hoverIcon {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 98.5%;
+  top: 0px;
+  border-radius: 10px;
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+.imageContainer:hover .hoverIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.title:hover {
+  color: hsl(178, 100%, 50%);
+}
+.bodyText {
+  color: hsl(215, 51%, 70%);
+}
+.hr {
+  height: 1px;
+  background-color: #aaa4;
+}
+.priceContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.priceContainer div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.priceContainer div:nth-child(1) {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+.priceContainer div:nth-child(2) {
+  color: hsl(215, 51%, 70%);
+}
+.avatarContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: hsl(215, 51%, 70%);
+}
+.avatar {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.avatarLink {
+  color: white;
+  text-decoration: none;
+  margin-left: 3px;
+}
+.avatarLink:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.reference {
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  bottom: -50px;
+}
+.link {
+  color: white;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 330px;
+    height: 545px;
+  }
+}

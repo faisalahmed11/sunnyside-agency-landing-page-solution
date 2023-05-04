@@ -1,27 +1,25 @@
-# Frontend Mentor - Interactive rating component solution
+# Frontend Mentor - NFT preview card component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
 ## Table of contents
 
-- [Overview](#overview)
+  - [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
+  - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 ## Overview
-This is a practice based front end project, can be done with vanilla HTML, CSS and js or using frameworks.
-This project is about building a simple responsive Interactive-rating-component card.
-with two components one is about submitting the ratings and other part about feedback.  
-Images of Product, favicon and icons are given, more importantly the finial design is also given.
 
+This is a practice based front end project, can be done with vanilla HTML, CSS and js or using frameworks.
+This project is about building a simple responsive NFT-preview-component-card. with some user interactions like clicking links via title or image.
+Images of Product, favicon and icons are given, more importantly the finial design is also given.
 
 ### Screenshot
 
@@ -30,11 +28,12 @@ Images of Product, favicon and icons are given, more importantly the finial desi
 
 ### Links
 
-- Live Site URL: [https://interactive-rating-component-challengee.vercel.app/](https://interactive-rating-component-challengee.vercel.app/)
+- Live Site URL: [https://nft-prview-component-challengee.vercel.app/](https://interactive-rating-component-challengee.vercel.app/)
 
 ## My process
- Using HTML, CSS and JS Learnings, I start implementing UI design from the outer most main components like container and section then putting all the sub-components, and then comes the most interesting part you might have guessed, it is called CSS Styling.
- off course, it backs life in it, colors, images and design was given already so it became easy to full fill it.
+
+Using HTML, CSS and JS Learnings, I start implementing UI design from the outer most main components like container and section then putting all the sub-components, and then comes the most interesting part you might have guessed, it is called CSS Styling.
+off course, it backs life in it, colors, images and design was given already so it became easy to full fill it.
 
 ### Built with
 
