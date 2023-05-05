@@ -1,6 +1,6 @@
-# Frontend Mentor - Stats preview card component solution
+# Frontend Mentor - 3-column preview card component solution
 
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -18,16 +18,17 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ## Overview
 
 This is a practice based front end project, can be completed with vanilla HTML, CSS and js or using frameworks.
-This project is about building a simple responsive stats-preview-card-component. 
-header-image for desktop and mobile, favicon and icons are given, more importantly the finial design is also given.
+This project is about building a simple responsive 3-column-preview-card-component. 
+favicon and icons are given, more importantly the finial design is also given.
 
 ### Screenshot
 
 ![](./public/1.png)
+![](./public/2.png)
 
 ### Links
 
-- Live Site URL: [https://stats-preview-card-challengee.vercel.app/](https://stats-preview-card-challengee.vercel.app/)
+- Live Site URL: [https://3-column-preview-card-challengee.vercel.app/](https://3-column-preview-card-challengee.vercel.app/)
 
 ## My process
 

@@ -1,56 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+const Card = ({ src, className, title, bodyText }) => {
+  return (
+    <div className={className}>
+      <Image className={`${styles.icon}`} src={src} width={60} height={60} alt="icon" />
+      <h1>{title}</h1>
+      <p>{bodyText}</p>
+      <button>Learn More</button>
+    </div>
+  );
+};
 
 function Home() {
-  const [width, setWidth] = useState(0);
-  useEffect(() => {
-    const eventListner = window.addEventListener("resize", () => {
-      setWidth(window.innerWidth);
-    });
-    setWidth(window.innerWidth);
-    return () => {
-      window.removeEventListener("resize", eventListner);
-    };
-  }, []);
   return (
     <main className={`${styles.main}`}>
-      <div className={`${styles.card}`}>
-        <section className={`${styles.cardSection}`}>
-          <h1>Get <span className={`${styles.insights}`}>insights</span> that help your business grow.</h1>
-          <p>
-            Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
-          </p>
-          <div className={`${styles.dataContainer}`}>
-            <div>
-              <p>10K+</p>
-              <p>COMPANIES</p>
-            </div>
-            <div>
-              <p>314</p>
-              <p>TEMPLATES</p>
-            </div>
-            <div>
-              <p>12M+</p>
-              <p>QUERIES</p>
-            </div>
-          </div>
-        </section>
-        <div className={`${styles.imageContainer}`}>
-          <Image
-            className={`${styles.image}`}
-            src={
-              width >= 375
-                ? "/image-header-desktop.jpg"
-                : "/image-header-mobile.jpg"
-            }
-            width={500}
-            height={500}
-            alt="header-image"
-          />
-        </div>
+     <div className={`${styles.temporary}`}>
 
+      <div className={`${styles.mainCard}`}>
+        <Card className={styles.card1} title={"SEDANS"} src={"/icon-sedans.svg"} 
+bodyText={"Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip."}
+
+        />
+        <Card className={styles.card2} title={"SUVS"} src={"/icon-suvs.svg"} 
+bodyText={"Take an SUV for its spacious interior, power, and versatility. Perfect ofr your next family vacation and off-road adventures."}
+
+        />
+        <Card className={styles.card3} title={"LUXURY"} src={"/icon-luxury.svg"} 
+bodyText={"Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style."}
+        />
+     </div>
         <p className={`${styles.reference}`}>
           Challenge by{" "}
           <Link
