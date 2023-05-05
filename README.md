@@ -1,6 +1,6 @@
-# Frontend Mentor - Order summary card solution
+# Frontend Mentor - Stats preview card component solution
 
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -18,8 +18,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ## Overview
 
 This is a practice based front end project, can be completed with vanilla HTML, CSS and js or using frameworks.
-This project is about building a simple responsive order-summary-component. with some user interactions like hovering and, clicking links.
-Images of Product, favicon and icons are given, more importantly the finial design is also given.
+This project is about building a simple responsive stats-preview-card-component. 
+header-image for desktop and mobile, favicon and icons are given, more importantly the finial design is also given.
 
 ### Screenshot
 
@@ -27,11 +27,11 @@ Images of Product, favicon and icons are given, more importantly the finial desi
 
 ### Links
 
-- Live Site URL: [https://order-summary-component-challengee.vercel.app/](https://order-summary-component-challengee.vercel.app/)
+- Live Site URL: [https://stats-preview-card-challengee.vercel.app/](https://stats-preview-card-challengee.vercel.app/)
 
 ## My process
 
-Using HTML, CSS and JS Learnings, I started implementing UI design from the outer most container, matching the widths and heights of the different components. then putting all the sub-components, and after this, comes the most interesting part you might have guessed, it is called CSS Styling.
+Using HTML, CSS and JS Learnings, I started implementing UI design from the outer most container, matching the width and height of the different components. then putting all the sub-components, and after this, comes the most interesting part you might have guessed, it is called CSS Styling.
 off course, it backs life in it, colors, images and design was given already so it became easy to full fill it.
 
 ### Built with

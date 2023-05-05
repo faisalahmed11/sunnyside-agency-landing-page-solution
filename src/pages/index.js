@@ -1,48 +1,56 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
 function Home() {
+  const [width, setWidth] = useState(0);
+  useEffect(() => {
+    const eventListner = window.addEventListener("resize", () => {
+      setWidth(window.innerWidth);
+    });
+    setWidth(window.innerWidth);
+    return () => {
+      window.removeEventListener("resize", eventListner);
+    };
+  }, []);
   return (
     <main className={`${styles.main}`}>
       <div className={`${styles.card}`}>
-        <Image
-          className={`${styles.hero}`}
-          src={"/illustration-hero.svg"}
-          width={500}
-          height={500}
-          alt="background-pattern"
-        />
-        <section className={`${styles.bodySection}`}>
-          <p className={`${styles.cardTitle}`}>Order Summary</p>
-          <p className={`${styles.cardBodyText}`}>
-            You can now listen to millions of songs, audiobooks, and podcasts on
-            any device anywhere you like!
+        <section className={`${styles.cardSection}`}>
+          <h1>Get <span className={`${styles.insights}`}>insights</span> that help your business grow.</h1>
+          <p>
+            Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
           </p>
-          <div className={`${styles.planContainer}`}>
-            <div className={`${styles.plan2ndContainer}`}>
-              <Image
-                src={"/icon-music.svg"}
-                alt="music icon"
-                width={50}
-                height={50}
-              />
-
-              <div className={`${styles.planSubContainer}`}>
-                <p className={`${styles.planText1}`}>Annual Plan</p>
-                <p className={`${styles.planText2}`}>$59.99/year</p>
-              </div>
+          <div className={`${styles.dataContainer}`}>
+            <div>
+              <p>10K+</p>
+              <p>COMPANIES</p>
             </div>
-            <Link className={`${styles.changeLink}`} href={"/"}>
-              Change
-            </Link>
+            <div>
+              <p>314</p>
+              <p>TEMPLATES</p>
+            </div>
+            <div>
+              <p>12M+</p>
+              <p>QUERIES</p>
+            </div>
           </div>
-          <button className={`${styles.proceedButton}`}>
-            Proceed to Payment
-          </button>
-          <button className={`${styles.cancelButton}`}>Cancel Order</button>
         </section>
+        <div className={`${styles.imageContainer}`}>
+          <Image
+            className={`${styles.image}`}
+            src={
+              width >= 375
+                ? "/image-header-desktop.jpg"
+                : "/image-header-mobile.jpg"
+            }
+            width={500}
+            height={500}
+            alt="header-image"
+          />
+        </div>
+
         <p className={`${styles.reference}`}>
           Challenge by{" "}
           <Link
