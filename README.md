@@ -1,6 +1,6 @@
-# Frontend Mentor - 3-column preview card component solution
+# Frontend Mentor - Profile card component solution
 
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -18,7 +18,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 ## Overview
 
 This is a practice based front end project, can be completed with vanilla HTML, CSS and js or using frameworks.
-This project is about building a simple responsive 3-column-preview-card-component. 
+This project is about building a simple responsive profile-card-component. 
 favicon and icons are given, more importantly the finial design is also given.
 
 ### Screenshot
@@ -28,12 +28,14 @@ favicon and icons are given, more importantly the finial design is also given.
 
 ### Links
 
-- Live Site URL: [https://3-column-preview-card-challengee.vercel.app/](https://3-column-preview-card-challengee.vercel.app/)
+- Live Site URL: [https://profile-card-component-challengee.vercel.app/](https://profile-card-component-challengee.vercel.app/)
 
 ## My process
 
 Using HTML, CSS and JS Learnings, I started implementing UI design from the outer most container, matching the width and height of the different components. then putting all the sub-components, and after this, comes the most interesting part you might have guessed, it is called CSS Styling.
 off course, it backs life in it, colors, images and design was given already so it became easy to full fill it.
+
+The tricky part of this challenge is about making a responsive background from two svg background images. 
 
 ### Built with
 
