@@ -1,7 +1,6 @@
-# Frontend Mentor - FAQ accordion card solution
+# Frontend Mentor - Social proof section solution
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 ## Table of contents
 
   - [Overview](#overview)
@@ -18,8 +17,8 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 ## Overview
 
 This is a practice based front end project, can be completed with vanilla HTML, CSS and js or using frameworks.
-This project is about building a simple responsive faq-accordion-card. 
-favicon and icons are given, more importantly the finial design is also given.
+This project is about building a simple responsive social proof section master. 
+favicon ,background-illustration,icons and other relative material is given, more importantly the finial design is also given.
 
 ### Screenshot
 
@@ -28,14 +27,12 @@ favicon and icons are given, more importantly the finial design is also given.
 
 ### Links
 
-- Live Site URL: [https://faq-accordion-card-c-challengee.vercel.app/](https://faq-accordion-card-challengee.vercel.app/)
+- Live Site URL: [https://social-proof-section-master-challengee.vercel.app/](https://social-proof-section-master-challengee.vercel.app/)
 
 ## My process
 
-Using HTML, CSS and JS Learnings, I started implementing UI design from the outer most container, matching the width and height of the different components. then putting all the sub-components, and after this, comes the most interesting part you might have guessed, it is called CSS Styling.
+Using HTML, CSS and JS Learnings, I started implementing UI design from the outer most container, matching the width and height of the different components. following mobile first approach, then putting all the sub-components, and after this, comes the most interesting part you might have guessed, it is called CSS Styling.
 off course, it backs life in it, colors, images and design was given already so it became easy to full fill it.
-
-The tricky part of this challenge was moving box in desktop mode while hovering questions. 
 
 ### Built with
 
