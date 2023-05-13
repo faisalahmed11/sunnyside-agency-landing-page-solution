@@ -1,75 +1,149 @@
-.main {
-  background: url("/bg-pattern-top-mobile.svg") top left no-repeat,
-    url("/bg-pattern-bottom-mobile.svg") bottom right no-repeat;
-  display: flex;
-  position: relative;
+.container {
   min-height: 100vh;
+  --bg-clr: rgba(24, 175, 175, 0.9);
+  --text-clr: firebrick;
+  display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.heroText {
+  background: linear-gradient(#faa3 50%, #ffff0033),
+    url("https://unsplash.it/1500/1040") no-repeat center / cover;
   text-align: center;
-  max-width: 22.4rem;
-  color: hsl(303, 10%, 53%);
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  font-weight: 500;
-  margin-top: 5rem;
-}
-.heroText > h1 {
-  line-height: 2.2rem;
-  color: hsl(300, 43%, 22%);
-  font-size: 2.6rem;
-  margin-bottom: 2rem;
-}
-.ratingsContainer {
-  margin: 2rem 0px;
-}
-.reference {
-  margin: 2rem 0rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  cursor: default;
 }
 
-@media screen and (min-width: 1120px) {
-  .main {
-    background: url("/bg-pattern-top-desktop.svg") top left no-repeat,
-      url("/bg-pattern-bottom-desktop.svg") bottom right no-repeat;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
+.container > header {
+  background-color: var(--bg-clr);
+  position: fixed;
+  width: 100%;
+}
+.container > header > h1 {
+  color: var(--text-clr);
+  padding-block: 0.5rem;
+}
+.toggleLabel {
+  height: min-content;
+  padding: 1rem 0rem;
+  position: absolute;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  bottom: 0px;
+  margin-block: auto;
+}
+
+.toggleLabel > span,
+.toggleLabel > span::after,
+.toggleLabel > span::before {
+  display: block;
+  position: relative;
+  transition: transform ease-in-out 150ms;
+  width: 2rem;
+  height: 2px;
+  background-color: white;
+}
+.toggleLabel > span::after,
+.toggleLabel > span::before {
+  content: "";
+  position: absolute;
+}
+.toggleLabel > span::after {
+  bottom: 0.5rem;
+}
+.toggleLabel > span::before {
+  top: 0.5rem;
+}
+
+.container > header > nav > ul {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container > header > nav {
+  position: absolute;
+  background-color: var(--bg-clr);
+  width: 100%;
+  text-align: left;
+  padding-left: 1rem;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 250ms ease-in-out 100ms;
+  padding-bottom: 0.5rem;
+}
+
+.toggleNav {
+  display: none;
+}
+.toggleNav:checked ~ nav {
+  transform: scale(1);
+}
+
+.toggleNav:checked ~ .toggleLabel > span {
+  transform: rotate(45deg);
+  transition: transform ease-in-out 200ms;
+}
+
+.toggleNav:checked ~ .toggleLabel > span:after {
+  transition: transform ease-in-out 200ms;
+  transform: rotate(90deg);
+  inset: 0;
+}
+.toggleNav:checked ~ .toggleLabel > span:before {
+  opacity: 0;
+  inset: 0;
+}
+
+.toggleNav:checked ~ nav > ul {
+  opacity: 1;
+  transition: opacity 200ms ease-in-out 200ms;
+}
+
+.toggleLabel {
+  cursor: pointer;
+}
+.container > header > nav > ul {
+  list-style: none;
+}
+.link {
+  text-transform: uppercase !important;
+  text-decoration: none;
+  color: var(--text-clr);
+}
+.link:hover {
+  color: hsl(0, 88%, 61%);
+  text-shadow: 0px 0px 30px 20px hsla(0, 88%, 71%, 0.9);
+}
+.link:active {
+  color: transparent;
+}
+
+@media screen and (min-width: 800px) {
+  .container > header {
+    display: grid;
+    gap: 3vw;
+    grid-template: ". logo navbar ." /1fr auto auto 1fr;
   }
-  .section1,
-  .section2 {
-    width: 74rem;
+  .container > header > nav {
+    grid-area: navbar;
+    padding: 0px;
+    transform: scale(1);
+    background-color: transparent;
+    position: relative;
+  }
+  .container > header > h1 {
+    grid-area: logo;
+  }
+
+  .container > header > nav > ul {
+    opacity: 1;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: clamp(1rem, 3vw, 4rem);
   }
-
-  .heroText {
-    max-width: 28.4rem;
-    margin: 0px;
-    text-align: left;
-  }
-  .heroText > h1 {
-    font-size: 3.7rem;
-    line-height: 3.1rem;
-  }
-
-  .rating1 {
-    right: 6rem;
-  }
-  .rating2 {
-    right: 3rem;
-  }
-  .review1 {
-    bottom: 2rem;
-  }
-  .review2 {
-    bottom: 1rem;
-  }
-
-  .reference {
-    position: absolute;
-    bottom: 1rem;
+  .toggleLabel {
+    display: none;
   }
 }
