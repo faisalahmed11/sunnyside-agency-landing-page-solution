@@ -1,4 +1,4 @@
-# Responsive Navbar using Grid + FlexBox. Build with NEXTjs.
+# Search-bar
 
 ## Table of contents
 
@@ -14,23 +14,18 @@
   - [Acknowledgments](#acknowledgments)
 
 ## Overview
-Responsive Navbar, using flex-box and grid.
+Search bar using html Css with Nextjs.
 
 
 ### Screenshot
 
 ![](./public/1.png)
 ![](./public/2.png)
-![](./public/3.png)
 
 ### Links
 
-- Live Site URL: [https://responsive-navbar-1.vercel.app/](https://responsive-navbar-1.vercel.app/)
+- Live Site URL: [https://search-bar-1.vercel.app/](https://search-bar-1.vercel.app/)
 
-## My process
-
-Started with mobile first approach, using positioning, and pseudo elements, and also making fonts responsive with clamp().
-Then comes desktop version. for that I used Grid for positioning logo and navbar elements.
 
 ### Built with
 
@@ -46,4 +41,4 @@ Then comes desktop version. for that I used Grid for positioning logo and navbar
 - Twitter - [@FaisalAhmed_01](https://www.twitter.com/FaisalAhmed_01)
 
 ## Acknowledgments
-This project is one my practising projects.
+I would like to thank [Sir Kevin Powell](https://youtu.be/DonxmmWW7Tk) for the idea of this project.
