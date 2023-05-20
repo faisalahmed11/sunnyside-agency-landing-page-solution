@@ -19,10 +19,15 @@ Responsive website with hero animating image, header footer and three sections.
 
 ### Screenshot
 
-![1234](./public/1.png)
+![](./public/1.png)
+
+
 
 
 ![](./public/2.png)
+
+
+
 
 
 ![](./public/3.png)
