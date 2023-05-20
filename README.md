@@ -24,11 +24,11 @@ Responsive website with hero animating image, header footer and three sections.
 
 ### Screenshot
 
-![desktop](./public/1.png)
+- Desktop ![](./public/1.png)
 
-![mobile](./public/2.png)
+![](./public/2.png)
 
-![active](./public/3.png)
+![](./public/3.png)
 
 
 
