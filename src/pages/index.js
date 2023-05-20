@@ -1,27 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/Home.module.css";
-import { BiSearch } from "react-icons/bi";
+import {
+  ContactSection,
+  CtaSection,
+  FirstSection,
+  Footer,
+  Header,
+} from "@/components";
 function Home() {
+  const [check, setCheck] = useState(false);
   return (
-    <div className={styles.container}>
-      <form
-        className={styles.form}
-        action=""
-        onSubmit={(e) => {
-          e.preventDefault();
-          alert("Thanks for checking out   :)");
-        }}
-      >
-        <input
-          placeholder="Search"
-          className={styles.formInput}
-          type="search"
-        />
-        <button className={styles.formButton}>
-          <BiSearch />
-        </button>
-      </form>
-    </div>
+    <>
+      <input
+        className={`${styles.checkbox}`}
+        type="checkbox"
+        id="checkbox"
+        readOnly
+        checked={check}
+      />
+      <Header setCheck={setCheck} check={check} />
+      <main id="home">
+        <div className={`${styles.mainBgImg}`}></div>
+        <FirstSection />
+        <CtaSection />
+        <ContactSection />
+        <Footer />
+      </main>
+    </>
   );
 }
 

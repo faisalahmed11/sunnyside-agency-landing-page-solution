@@ -1,4 +1,5 @@
-# Search-bar
+# Responsive Website practice-1.
+
 
 ## Table of contents
 
@@ -13,18 +14,39 @@
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
 
+
+
 ## Overview
-Search bar using html Css with Nextjs.
+
+Responsive website with hero animating image, header footer and three sections.
+
 
 
 ### Screenshot
 
 ![](./public/1.png)
 ![](./public/2.png)
+![](./public/3.png)
+
+
 
 ### Links
 
-- Live Site URL: [https://search-bar-1.vercel.app/](https://search-bar-1.vercel.app/)
+- Live Site URL: [https://template-1.vercel.app/](https://template-1.vercel.app/)
+
+
+
+### my-process
+
+following mobile first approach, using flex-box and relative units for responsiveness, and animating some stuff with @keyframe, and finally completing it using @media query.
+
+
+
+### what-i-learned
+
+As you know, practice is the only way of getting hands on best practices, therefore as I practice, I learn how to practice more. How to write more clean and optimized code.  
+
+
 
 
 ### Built with
@@ -36,9 +58,14 @@ Search bar using html Css with Nextjs.
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 
+
+
 ## Author
 
 - Twitter - [@FaisalAhmed_01](https://www.twitter.com/FaisalAhmed_01)
 
+
+
+
 ## Acknowledgments
-I would like to thank [Sir Kevin Powell](https://youtu.be/DonxmmWW7Tk) for the idea of this project.
+I would love to thank W3School, for amazing platform and proving valuable resources without any pay. I have developed the template given by W3School.com without looking at source code, just downloaded images and copied text.

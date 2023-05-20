@@ -1,69 +1,118 @@
-.container {
-  min-height: 100vh;
-  background: linear-gradient(#fff4, #f004);
+.checkbox {
+  display: none;
 }
-.form {
-  display: flex;
+.checkbox:checked + header {
+  height: auto;
+}
+
+/* Main Bg-image */
+.mainBgImg {
   position: relative;
-  --main-clr: orangered;
-  width: 3.12rem;
-  overflow: hidden;
-  padding: 0.05rem;
-  margin-inline: auto;
-  top: 10vh;
-  border: 2px solid var(--main-clr);
-  border-radius: 2rem;
-  transition: width 400ms cubic-bezier(0.05, 0.93, 0.08, 1.06);
+  background: url("/chicago.jpg") no-repeat top 45px center / contain;
+  aspect-ratio: 1/0.6;
+  animation: mainBgAnimate 15s infinite;
 }
 
-.formInput {
-  position: absolute;
-  background-color: transparent;
-  flex: 1;
-  padding: 100%;
-  cursor: pointer;
-  font-size: 1.1rem;
-  padding-inline: 0.7rem;
-  border: none;
-}
-.formInput:focus,
-.formButton:focus {
-  outline: none;
-}
-
-.formButton {
-  background-color: transparent;
-  display: flex;
-
-  align-items: center;
-  border: none;
-  font-size: 1.7rem;
-  background-color: transparent;
-  color: black;
-  padding: 0.5rem;
-  cursor: pointer;
-
-  border-radius: 50%;
-  margin-left: auto;
-}
-
-.form:focus-within {
-  width: 22rem;
-  background-color: #fff4;
-  backdrop-filter: blur(0.25rem);
-}
-.form:focus-within > .formInput {
-  position: relative;
-  padding: 0 0.7rem;
-  cursor: text;
-}
-
-.form:focus-within > .formButton {
-  background-color: var(--main-clr);
+.mainBgImg::after,
+.mainBgImg::before {
+  font-family: system-ui;
   color: white;
+  max-width: max-content;
+  height: max-content;
+  position: absolute;
+  inset: 0;
+  margin-inline: auto;
+  cursor: text;
+  margin-top: auto;
+  bottom: 3rem;
+  opacity: 0;
 }
 
-.formButton:focus,
-.formButton:hover {
-  box-shadow: 0 0 10px 1px crimson;
+.mainBgImg::after {
+  content: "Thank you, Chicago - A night we won't forget.";
+  font-weight: bold;
+  max-width: 35ch;
+  text-align: center;
+  animation: description 15s infinite;
+}
+.mainBgImg::before {
+  content: "Chicago";
+  animation: Title 15s infinite;
+  font-size: 1.7rem;
+  margin-bottom: 3.5rem;
+}
+
+@keyframes description {
+  0% {
+    content: "Thank you, Chicago - A night we won't forget.";
+  }
+  33% {
+    content: "We had the best time playing at Venice Beach!";
+  }
+  66% {
+    content: "The atmosphere in New York is lorem ipsum.";
+  }
+}
+
+@keyframes Title {
+  0% {
+    content: "Chicago";
+  }
+  33% {
+    content: "Los Angeles";
+  }
+  66% {
+    content: "New York";
+  }
+}
+
+@keyframes mainBgAnimate {
+  0% {
+    background-image: url("/chicago.jpg");
+  }
+  33% {
+    background-image: url("/la.jpg");
+  }
+  66% {
+    background-image: url("/ny.jpg");
+  }
+}
+
+/* Footer Section */
+.footer {
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+}
+.footer > div {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.footer > div > i:hover {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 600px) {
+  .mainBgImg::after,
+  .mainBgImg::before {
+    opacity: 1;
+  }
+
+  .mainBgImg {
+    aspect-ratio: 1/0.55;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .mainBgImg {
+    aspect-ratio: 1/ 0.53;
+  }
+  .mainBgImg::after {
+    max-width: 40ch !important;
+  }
 }

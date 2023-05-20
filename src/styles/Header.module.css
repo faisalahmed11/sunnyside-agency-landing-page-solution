@@ -1,0 +1,119 @@
+.header {
+  background-color: black;
+  color: white;
+  position: fixed;
+  z-index: 11111;
+  width: 100%;
+  top: 0;
+  height: 2.9rem;
+  overflow: hidden;
+}
+
+.header > nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.header > nav i {
+  top: 0;
+  right: 0;
+  padding: 1rem 1.5rem;
+  position: absolute;
+}
+.header > nav i:hover {
+  color: black;
+  background-color: lightgray;
+}
+.header > nav > ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui;
+  text-transform: uppercase;
+}
+.navLink,
+.header > nav > ul > li:last-of-type {
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  color: inherit;
+}
+
+.header > nav > ul > li:first-of-type > .navLink {
+  width: 10%;
+}
+
+.header > nav > ul > li:last-of-type {
+  display: none;
+}
+.navLink:hover,
+.header > nav > ul > li:last-of-type:hover,
+.header > nav > ul > li:last-of-type:hover::after {
+  border-top-color: initial;
+  background-color: lightgray;
+  color: black;
+}
+.searchIcon {
+  display: none;
+}
+
+.moreDropdown {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .header > nav > ul {
+    flex-direction: row;
+  }
+  .header {
+    overflow: visible;
+  }
+  .header > nav > ul > li:first-of-type > .navLink {
+    width: auto;
+  }
+  .header > nav > ul > li:nth-last-of-type(2) {
+    display: none;
+  }
+  .header > nav > ul > li:last-of-type {
+    display: block;
+    position: relative;
+  }
+
+  .header > nav > ul > li:last-of-type:hover .moreDropdown {
+    display: block;
+    position: absolute;
+    left: 0;
+    list-style: none;
+    background-color: white;
+    z-index: 111;
+    top: 100%;
+  }
+  .moreDropdown > li {
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    color: black;
+  }
+
+  .moreDropdown > li:hover {
+    background-color: lightgray;
+    color: black;
+  }
+  .header > nav > ul > li:last-of-type::after {
+    content: "";
+    position: absolute;
+    right: 12%;
+    top: 50%;
+    border: 5px solid transparent;
+    border-top-color: white;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+  .searchIcon {
+    display: block;
+  }
+  .searchIcon:hover {
+    background-color: tomato !important;
+  }
+}

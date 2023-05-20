@@ -1,8 +1,11 @@
 
-*,::after,::before{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+@import "~@fortawesome/fontawesome-free/css/all.css";
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
+body {
+  font-family: system-ui;
+  color-scheme: light dark;
+}
