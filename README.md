@@ -26,9 +26,9 @@ Responsive website with hero animating image, header footer and three sections.
 
 - Desktop ![](./public/1.png)
 
-![](./public/2.png)
+- Mobile ![](./public/2.png)
 
-![](./public/3.png)
+- Active ![](./public/3.png)
 
 
 
