@@ -8,9 +8,9 @@
 /* Main Bg-image */
 .mainBgImg {
   position: relative;
-  background: url("/chicago.jpg") no-repeat top 45px center / contain;
+  background: url("/ny.jpg") no-repeat top 45px center / contain;
   aspect-ratio: 1/0.6;
-  animation: mainBgAnimate 15s infinite;
+  animation: mainBgAnimate 30s infinite;
 }
 
 .mainBgImg::after,
@@ -29,15 +29,15 @@
 }
 
 .mainBgImg::after {
-  content: "Thank you, Chicago - A night we won't forget.";
+  content: "The atmosphere in New York is lorem ipsum.";
   font-weight: bold;
   max-width: 35ch;
   text-align: center;
-  animation: description 15s infinite;
+  animation: description 30s infinite;
 }
 .mainBgImg::before {
-  content: "Chicago";
-  animation: Title 15s infinite;
+  content: "New York";
+  animation: Title 30s infinite;
   font-size: 1.7rem;
   margin-bottom: 3.5rem;
 }
