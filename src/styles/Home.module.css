@@ -10,7 +10,7 @@
   position: relative;
   background: url("/chicago.jpg") no-repeat top 45px center / contain;
   aspect-ratio: 1/0.6;
-  animation: mainBgAnimate 20s infinite;
+  animation: mainBgAnimate 20s infinite linear;
 }
 
 .mainBgImg::after,
@@ -33,11 +33,11 @@
   font-weight: bold;
   max-width: 35ch;
   text-align: center;
-  animation: description 20s infinite;
+  animation: description 20s infinite linear;
 }
 .mainBgImg::before {
   content: "Chicago";
-  animation: Title 20s infinite;
+  animation: Title 20s infinite linear;
   font-size: 1.7rem;
   margin-bottom: 3.5rem;
 }
