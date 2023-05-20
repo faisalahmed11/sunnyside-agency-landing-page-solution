@@ -34,7 +34,7 @@ Responsive website with hero animating image, header footer and three sections.
 
 ### Links
 
-- Live Site URL: [https://template-1.vercel.app/](https://template-1.vercel.app/)
+- Live Site URL: [https://responsive-template-1.vercel.app/](https://responsive-template-1.vercel.app/)
 
 ### my-process
 
