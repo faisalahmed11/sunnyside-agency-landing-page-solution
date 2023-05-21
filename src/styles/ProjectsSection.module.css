@@ -1,0 +1,33 @@
+.projectsSection > h1 {
+  padding-block: 4rem;
+  font-weight: 400;
+}
+.card {
+  position: relative;
+}
+.image {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  height: auto;
+}
+.card > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1213;
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .projectsSection > div {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .projectsSection > div {
+    column-count: 4;
+  }
+}

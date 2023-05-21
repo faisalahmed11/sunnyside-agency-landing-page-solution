@@ -5,26 +5,20 @@ function ContactSection() {
   return (
     <section id="contact" className={`${styles.contactSection}`}>
       <h1>Contact</h1>
-      <i>Fan? Drop a note!</i>
-      <div className={`${styles.formContainer}`}>
-        <div>
-          <div>Chicago, US</div>
-          <div>Phone: +00 151515</div>
-          <div>Email: mail@mail.com</div>
-        </div>
-        <form
-          autoComplete="true"
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert("Thanks for checking out :)");
-          }}
-        >
-          <input type="text" placeholder="Name" name="Name" required />
-          <input type="text" name="email" placeholder="Email" required />
-          <input type="text" name="message" placeholder="Message" required />
-          <button>SEND</button>
-        </form>
-      </div>
+      <p>Lets get in touch and talk about your next project</p>
+      <form
+        autoComplete="true"
+        onSubmit={(e) => {
+          e.preventDefault();
+          alert("Thanks for checking out :)");
+        }}
+      >
+        <input type="text" placeholder="Name" name="Name" required />
+        <input type="text" name="email" placeholder="Email" required />
+        <input type="text" name="Subject" placeholder="Subject" required />
+        <input type="text" name="Comment" placeholder="Comment" required />
+        <button>SEND MESSAGE</button>
+      </form>
 
       <Image
         className={`${styles.contactSectionImage}`}

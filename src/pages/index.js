@@ -1,31 +1,32 @@
 import React, { useState } from "react";
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
 import {
   ContactSection,
-  CtaSection,
-  FirstSection,
+  AboutSection,
+  ProjectsSection,
   Footer,
   Header,
 } from "@/components";
 function Home() {
-  const [check, setCheck] = useState(false);
   return (
     <>
-      <input
-        className={`${styles.checkbox}`}
-        type="checkbox"
-        id="checkbox"
-        readOnly
-        checked={check}
-      />
-      <Header setCheck={setCheck} check={check} />
-      <main id="home">
-        <div className={`${styles.mainBgImg}`}></div>
-        <FirstSection />
-        <CtaSection />
+      <Header />
+      <main className={`${styles.main}`}>
+        <div className={`${styles.imageContainer}`}>
+          <Image
+            src={"/architect.jpg"}
+            className={`${styles.mainBgImage}`}
+            alt=""
+            width={1500}
+            height={1000}
+          />
+        </div>
+        <ProjectsSection />
+        <AboutSection />
         <ContactSection />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

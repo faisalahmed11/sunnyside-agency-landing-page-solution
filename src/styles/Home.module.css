@@ -1,118 +1,69 @@
-.checkbox {
-  display: none;
-}
-.checkbox:checked + header {
+.mainBgImage {
+  width: 100%;
   height: auto;
 }
-
-/* Main Bg-image */
-.mainBgImg {
+.imageContainer {
   position: relative;
-  background: url("/chicago.jpg") no-repeat top 45px center / contain;
-  aspect-ratio: 1/0.6;
-  animation: mainBgAnimate 20s infinite linear;
+  margin-top: 3.3rem;
 }
-
-.mainBgImg::after,
-.mainBgImg::before {
-  font-family: system-ui;
-  color: white;
+.main {
+  max-width: 1500px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+.imageContainer::after,
+.imageContainer::before {
+  position: absolute;
+  content: "Architects";
   max-width: max-content;
   height: max-content;
-  position: absolute;
   inset: 0;
-  margin-inline: auto;
-  cursor: text;
-  margin-top: auto;
-  bottom: 3rem;
-  opacity: 0;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  color: white;
+  margin: auto;
+  top: 3rem;
+}
+.imageContainer::before {
+  content: "BR";
+  font-size: 2.2rem;
+  font-weight: bolder;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.678);
+  bottom: 6rem;
 }
 
-.mainBgImg::after {
-  content: "Thank you, Chicago - A night we won't forget.";
-  font-weight: bold;
-  max-width: 35ch;
-  text-align: center;
-  animation: description 20s infinite linear;
-}
-.mainBgImg::before {
-  content: "Chicago";
-  animation: Title 20s infinite linear;
-  font-size: 1.7rem;
-  margin-bottom: 3.5rem;
-}
-
-@keyframes description {
-  0% {
-    content: "Thank you, Chicago - A night we won't forget.";
+@media screen and (min-width: 500px) {
+  .imageContainer::before {
+    right: 12rem;
+    inset-block: 0;
   }
-  33% {
-    content: "We had the best time playing at Venice Beach!";
-  }
-  66% {
-    content: "The atmosphere in New York is lorem ipsum.";
+  .imageContainer::after {
+    left: 7rem;
+    inset-block: 0;
   }
 }
 
-@keyframes Title {
-  0% {
-    content: "Chicago";
-  }
-  33% {
-    content: "Los Angeles";
-  }
-  66% {
-    content: "New York";
-  }
-}
-
-@keyframes mainBgAnimate {
-  0% {
-    background-image: url("/chicago.jpg");
-  }
-  33% {
-    background-image: url("/la.jpg");
-  }
-  66% {
-    background-image: url("/ny.jpg");
-  }
-}
-
-/* Footer Section */
 .footer {
-  height: 13rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.7;
+  text-align: center;
+  padding-block: 2.5rem;
+  background-color: black;
+  margin-top: 0.5rem;
 }
-.footer > div {
-  display: flex;
-  gap: 3px;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-.footer > div > i:hover {
-  opacity: 0.5;
+.footer * {
+  color: white;
 }
 
-@media screen and (min-width: 600px) {
-  .mainBgImg::after,
-  .mainBgImg::before {
-    opacity: 1;
+@media screen and (max-width: 370px) {
+  .imageContainer::before {
+    inset: 0;
   }
-
-  .mainBgImg {
-    aspect-ratio: 1/0.55;
+  .imageContainer::after {
+    display: none;
   }
 }
-
-@media screen and (min-width: 1000px) {
-  .mainBgImg {
-    aspect-ratio: 1/ 0.53;
-  }
-  .mainBgImg::after {
-    max-width: 40ch !important;
+@media screen and (max-width: 1500px) {
+  .imageContainer {
+    margin-inline: -2rem;
   }
 }

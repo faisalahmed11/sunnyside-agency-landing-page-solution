@@ -1,6 +1,6 @@
 import Header from "./header";
 import Footer from "./footer";
-import FirstSection from "./firstSection";
-import CtaSection from "./ctaSection";
+import ProjectsSection from "./projectsSection";
+import AboutSection from "./AboutSection";
 import ContactSection from "./contactSection";
-export {Header,Footer,FirstSection,CtaSection,ContactSection}
+export {Header,Footer,ProjectsSection,AboutSection,ContactSection}

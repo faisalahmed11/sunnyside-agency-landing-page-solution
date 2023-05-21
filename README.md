@@ -1,4 +1,4 @@
-# Responsive Website design template practice-1.
+# Responsive Website design template-2 practice-1.
 
 ## Table of contents
 
@@ -28,13 +28,9 @@ Responsive website with hero animating image, header footer and three sections.
 
 
 
-
-
-![](./public/3.png)
-
 ### Links
 
-- Live Site URL: [https://RWD-template-1.vercel.app/](https://RWD-template-1.vercel.app/)
+- Live Site URL: [https://RWD-template-2.vercel.app/](https://RWD-template-2.vercel.app/)
 
 ### my-process
 
