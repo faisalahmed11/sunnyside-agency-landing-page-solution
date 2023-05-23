@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className={`${styles.footer}`}>
     <Link href={"/"}>To the top</Link>
-    <p>design by <Link href={"https://www.w3schools.com/w3css/tryw3css_templates_fashion_blog.htm#"}>W3.css</Link> developed by <Link href={"https://github.com/faisalahmed11"}>Faisal Ahmed</Link></p>
+    <p>design by <Link target="_blank" href={"https://www.w3schools.com/w3css/tryw3css_templates_fashion_blog.htm#"}>W3.css</Link> developed by <Link target="_blank" href={"https://github.com/faisalahmed11"}>Faisal Ahmed</Link></p>
     </footer>
   );
 }
