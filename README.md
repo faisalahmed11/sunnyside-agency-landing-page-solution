@@ -1,4 +1,4 @@
-# Responsive Fashion Blog Site.
+# Parallax Scroll Demo Site with Html CSS using Nextjs
 
 ## Table of contents
 
@@ -15,30 +15,30 @@
 
 ## Overview
 
-The Design of this  site was given by w3school and developed by me,
-This is a fully responsive site containing header,main,aside and footer sections.
+<!-- The Design of this  site was given by w3school and developed by me,
+This is a fully responsive site containing header,main,aside and footer sections. -->
 
 
 ### Screenshot
 
 ![](./public/1.png)
 
-![](./public/2.png)
+<!-- ![](./public/2.png) -->
 
 
 
 ### Links
 
-- Live Site URL: [https://responsive-fashion-blog.vercel.app/](https://responsive-fashion-blog.vercel.app/)
+- Live Site URL: [https://rarallax-scroll-site.vercel.app/](https://parallax-scroll-site.vercel.app/)
 
 ### my-process
 
-following mobile first approach, using flex-box, grid, relative units and @media query for responsiveness .
+<!-- following mobile first approach, using flex-box, grid, relative units and @media query for responsiveness . -->
 
 
 ### what-i-learned
 
-As you know, practice is the only way of getting hands on best practices, therefore as I practice, I learn how to practice more. How to write more clean and optimized code.
+<!-- As you know, practice is the only way of getting hands on best practices, therefore as I practice, I learn how to practice more. How to write more clean and optimized code. -->
 
 ### Built with
 
@@ -56,4 +56,4 @@ As you know, practice is the only way of getting hands on best practices, theref
 
 ## Acknowledgments
 
-I would love to thank W3School, for amazing platform and proving valuable resources without any pay. I have developed the template given by W3School.com without looking at source code, just downloaded images and copied text.
+I would love to thank Web Dev Simplified Youtube Channel, for being amazing platform and proving valuable resources without any pay. 
