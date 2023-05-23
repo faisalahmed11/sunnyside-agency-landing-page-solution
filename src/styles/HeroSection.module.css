@@ -1,0 +1,81 @@
+.heroSection{
+    text-align: center;
+    /* max-width: 1600px; */
+    /* margin-inline:auto; */
+  width: 100%;
+    background-color: white;
+    /* margin-bottom: 1rem; */
+}
+
+.heroSection > h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top:3rem;
+}
+
+.heroSection > p{
+    /* font-size: 1rem; */
+    margin-block: .5rem 4rem;
+}
+
+.heroSection > p > span{
+    color: white;
+    padding-inline:.5rem;
+    background-color:black;
+}
+
+.heroSection > div{
+    position: relative;
+}
+
+.heroSection > div >*:first-child {
+    /* margin: 0; */
+    width: 100%;
+    height: auto;
+}
+
+.heroSection > div > div{
+    position: absolute;
+    color: white;
+    inset-block: 0;
+    left: 1.5rem;
+    text-align: left;
+    height: max-content;
+    margin-block: auto;
+    letter-spacing: 3px;
+}
+
+.heroSection > div >div >*:first-child{
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: 4.3rem;
+}
+
+.heroSection > div > div>*:nth-child(2){
+    font-size: 4.2rem;
+    text-transform: uppercase;
+}
+
+.heroSection > div >div >*:last-child{
+border: 0;
+text-transform: uppercase;
+font-family: 'Oswald', sans-serif;
+font-size: 1.1rem;
+background-color:rgba(211, 211, 211, 0.671) ;
+font-weight: 400;
+margin-top: .5rem;
+padding: .8rem 1.5rem;
+cursor: pointer;
+}
+
+.heroSection button:hover{
+    background-color: lightgray !important;
+}
+
+
+@media screen and (max-width: 550px) {
+    .heroSection > div >div>*:nth-child(2) {
+      display: none;
+    }
+  }

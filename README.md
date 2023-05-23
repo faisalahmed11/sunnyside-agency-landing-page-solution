@@ -1,4 +1,4 @@
-# Responsive Website design template-2 practice-1.
+# Responsive Fashion Blog Site.
 
 ## Table of contents
 
@@ -15,14 +15,13 @@
 
 ## Overview
 
-Responsive website with hero animating image, header footer and three sections.
+The Design of this  site was given by w3school and developed by me,
+This is a fully responsive site containing header,main,aside and footer sections.
+
 
 ### Screenshot
 
 ![](./public/1.png)
-
-
-
 
 ![](./public/2.png)
 
@@ -30,11 +29,12 @@ Responsive website with hero animating image, header footer and three sections.
 
 ### Links
 
-- Live Site URL: [https://RWD-template-2.vercel.app/](https://RWD-template-2.vercel.app/)
+- Live Site URL: [https://responsive-fashion-blog.vercel.app/](https://responsive-fashion-blog.vercel.app/)
 
 ### my-process
 
-following mobile first approach, using flex-box and relative units for responsiveness, and animating some stuff with @keyframe, and finally completing it using @media query.
+following mobile first approach, using flex-box, grid, relative units and @media query for responsiveness .
+
 
 ### what-i-learned
 
@@ -44,7 +44,8 @@ As you know, practice is the only way of getting hands on best practices, theref
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Flex-box
+- Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
