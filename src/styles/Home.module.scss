@@ -1,0 +1,32 @@
+
+.header {
+  position: sticky;
+  top: 0px;
+  h1 {
+    transition: all 200ms linear;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    padding: 10px;
+    background-color: lightcoral;
+  }
+}
+
+
+.main p {
+    transition: all 200ms linear;
+    background-color: lightskyblue;
+    margin: 5%;
+    padding: 2%;
+    line-height: 3rem;
+  }
+
+
+  .header[sticking="true"] {
+    h1 {
+      background-color: lightskyblue;
+    }
+    ~ main > p {
+      background-color: lightcoral;
+    }
+  }

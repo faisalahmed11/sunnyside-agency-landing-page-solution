@@ -1,10 +1,10 @@
-# Parallax Scroll Demo Site with Html CSS using Nextjs
+# Practice Project of styling sticky header on scroll
 
 ## Table of contents
 
 - [Overview](#overview)
 - [Screenshot](#screenshot)
-- [Links](#links)
+<!-- - [Links](#links) -->
 - [My process](#my-process)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
@@ -23,13 +23,13 @@ This is a fully responsive site containing header,main,aside and footer sections
 
 ![](./public/1.png)
 
-<!-- ![](./public/2.png) -->
+![](./public/2.png)
 
 
 
 ### Links
 
-- Live Site URL: [https://rarallax-scroll-site.vercel.app/](https://parallax-scroll-site.vercel.app/)
+<!-- - Live Site URL: [https://rarallax-scroll-site.vercel.app/](https://parallax-scroll-site.vercel.app/) -->
 
 ### my-process
 
@@ -44,6 +44,7 @@ This is a fully responsive site containing header,main,aside and footer sections
 
 - Semantic HTML5 markup
 - CSS custom properties
+- SASS
 - Flex-box
 - Grid
 - Mobile-first workflow
@@ -56,4 +57,4 @@ This is a fully responsive site containing header,main,aside and footer sections
 
 ## Acknowledgments
 
-I would love to thank Web Dev Simplified Youtube Channel, for being amazing platform and proving valuable resources without any pay. 
+I would love to thank Kevin Powell Youtube Channel, for being amazing platform and proving valuable resources without any pay. 
