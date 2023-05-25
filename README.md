@@ -1,10 +1,10 @@
-# Responsive Animating Accordion. 
+# Responsive Table. 
 
 ## Table of contents
 
 - [Overview](#overview)
 - [Screenshot](#screenshot)
-- [Links](#links)
+<!-- - [Links](#links) -->
 - [My process](#my-process)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
@@ -25,13 +25,13 @@ This is a fully responsive site containing header,main,aside and footer sections
 
 ![](./public/2.png)
 
-![](./public/3.png)
+
 
 
 
 ### Links
-
-- Live Site URL: [https://responsive-animating-accrodion.vercel.app/](https://responsive-animating-accrodion.vercel.app/)
+<!-- 
+- Live Site URL: [https://responsive-animating-accrodion.vercel.app/](https://responsive-animating-accrodion.vercel.app/) -->
 
 ### my-process
 

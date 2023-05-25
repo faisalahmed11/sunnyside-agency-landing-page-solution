@@ -1,61 +1,63 @@
 import React, { useState } from "react";
 import styles from "../styles/Home.module.scss";
-const Accordion = ({ title, body }) => {
-  const [active, setActive] = useState(false);
-  return (
-    <div className={styles.accordion} active={active.toString()}>
-      <h1 tabIndex={0}  onKeyUp={()=>setActive(!active)} onClick={() => setActive(!active)}>{title}</h1>
-      <div>
-        <p>{body}</p>
-      </div>
-    </div>
-  );
-};
+
+const TableDataRow=({Name,Class,Subject,Score,Position})=><tr>
+<td data-cell="Name">{Name}</td>
+<td data-cell="Class">{Class}</td>
+<td data-cell="Subject">{Subject}</td>
+<td data-cell="Score">{Score}</td>
+<td data-cell="position">{Position}</td>
+</tr>
 function Home() {
   return (
     <>
       <main className={styles.main}>
-        <div>
-          <h1>Animating Accordion</h1>
-          <Accordion
-            title={"ipsam reiciendis beatae dignissimos sunt"}
-            body={
-              "quis illum, voluptatem quas! Culpa repellendus tempore vitae tempora consequatur minima debitis ea dolorem ipsam reiciendis beatae dignissimos sunt itaque quasi maiores, quod eum repellat iusto ex vel, eius doloremque. Est cumque voluptates numquam eligendi quae vero perferendis at reprehenderit nulla necessitatibus? Eum reprehenderit beatae odio et rerum exercitationem asperiores culpa quasi dolorum"
-            }
-          />
-          <Accordion
-            title={"ipsam reiciendis beatae dignissimos sunt"}
-            body={
-              "quis illum, voluptatem quas! Culpa repellendus tempore vitae tempora consequatur minima debitis ea dolorem ipsam reiciendis beatae dignissimos sunt itaque quasi maiores, quod eum repellat iusto ex vel, eius doloremque. Est cumque voluptates numquam eligendi quae vero perferendis at reprehenderit nulla necessitatibus? Eum reprehenderit beatae odio et rerum exercitationem asperiores culpa quasi dolorum"
-            }
-          />
-          <Accordion
-            title={"ipsam reiciendis beatae dignissimos sunt"}
-            body={
-              "quis illum, voluptatem quas! Culpa repellendus tempore vitae tempora consequatur minima debitis ea dolorem ipsam reiciendis beatae dignissimos sunt itaque quasi maiores, quod eum repellat iusto ex vel, eius doloremque. Est cumque voluptates numquam eligendi quae vero perferendis at reprehenderit nulla necessitatibus? Eum reprehenderit beatae odio et rerum exercitationem asperiores culpa quasi dolorum"
-            }
-          />
-          <Accordion
-            title={"ipsam reiciendis beatae dignissimos sunt"}
-            body={
-              "quis illum, voluptatem quas! Culpa repellendus tempore vitae tempora consequatur minima debitis ea dolorem ipsam reiciendis beatae dignissimos sunt itaque quasi maiores, quod eum repellat iusto ex vel, eius doloremque. Est cumque voluptates numquam eligendi quae vero perferendis at reprehenderit nulla necessitatibus? Eum reprehenderit beatae odio et rerum exercitationem asperiores culpa quasi dolorum"
-            }
-          />
-          <Accordion
-            title={"ipsam reiciendis beatae dignissimos sunt"}
-            body={
-              "quis illum, voluptatem quas! Culpa repellendus tempore vitae tempora consequatur minima debitis ea dolorem ipsam reiciendis beatae dignissimos sunt itaque quasi maiores, quod eum repellat iusto ex vel, eius doloremque. Est cumque voluptates numquam eligendi quae vero perferendis at reprehenderit nulla necessitatibus? Eum reprehenderit beatae odio et rerum exercitationem asperiores culpa quasi dolorum"
-            }
-          />
-          <Accordion
-            title={"ipsam reiciendis beatae dignissimos sunt"}
-            body={
-              "quis illum, voluptatem quas! Culpa repellendus tempore vitae tempora consequatur minima debitis ea dolorem ipsam reiciendis beatae dignissimos sunt itaque quasi maiores, quod eum repellat iusto ex vel, eius doloremque. Est cumque voluptates numquam eligendi quae vero perferendis at reprehenderit nulla necessitatibus? Eum reprehenderit beatae odio et rerum exercitationem asperiores culpa quasi dolorum"
-            }
-          />
+        <table>
+          <caption>English-Test 26 May 2023 Result</caption>
+          <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Subject</th>
+            <th>Score</th>
+            <th>Position</th>
+          </tr>
+<TableDataRow
+Name={"Faisal Ahmed"}
+Class={"Fsc"}
+Subject={"English"}
+Position={"1st"}
+Score={80}
+/>
+<TableDataRow
+Name={"Shehzad Ahmed"}
+Class={"Fsc"}
+Subject={"English"}
+Position={"1st"}
+Score={80}
+/>
+<TableDataRow
+Name={"Sameer Ali"}
+Class={"Fsc"}
+Subject={"English"}
+Position={"1st"}
+Score={80}
+/>
+<TableDataRow
+Name={"Fida Hussain"}
+Class={"Fsc"}
+Subject={"English"}
+Position={"1st"}
+Score={80}
+/>
+<TableDataRow
+Name={"Aamir Mashori"}
+Class={"Fsc"}
+Subject={"English"}
+Position={"1st"}
+Score={80}
+/>
          
-
-        </div>
+        </table>
       </main>
     </>
   );
