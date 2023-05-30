@@ -1,67 +1,185 @@
-.main {
-  table {
-    width: 100%;
-    max-width: 1400px;
-    margin-inline: auto;
-    background-color: rgba(26, 39, 77, 0.2);
-    border-collapse: collapse;
-    font-size: 1.3rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
+@mixin fontAwesome {
+  font-size: 1rem;
+  padding: 0.2rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
 
-    tr:nth-of-type(2n) {
-      background-color: rgba(0, 0, 0, 0.1);
+// Header
+
+.header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  z-index: 123;
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]:checked + ul {
+    height: 2.9rem;
+    overflow-y: hidden;
+  }
+
+  > i {
+    display: none;
+  }
+  i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  i:hover {
+    opacity: 1;
+    background-color: black;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    display: grid;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.02rem;
+    li {
+      background-color: white;
     }
 
-    td,
-    caption,
-    th {
-      text-align: left;
-      padding: 1rem 1rem;
+    li:first-child {
+      background-color: transparent;
     }
-
-    th {
-      background-color: lightblue;
+    li:first-child > :first-child {
+      width: max-content;
+      opacity: 0.6;
     }
-    td {
-      text-align: left;
+    li > :first-child {
+      display: block;
+      color: black;
+      padding: 0.8rem 1rem;
+      text-decoration: none;
     }
-
-    caption {
-      font-size: 1.5rem;
-      font-weight: bolder;
-      background-color: black;
-      color: white;
+    li > :first-child:hover {
+      opacity: 1;
+      background-color: lightgray;
     }
   }
 }
 
-@media screen and (max-width: 500px) {
-  .main {
-    table {
-      caption {
-        font-size: 1.2rem;
-      }
-      th {
-        display: none;
-      }
-      td {
-        display: grid;
-        grid-template-columns: 0.5fr 1fr;
-        padding: 0 1rem;
-      }
+// Media Queries
 
-      td:first-of-type {
-        padding-top: 0.5rem;
-      }
-      td:last-of-type {
-        padding-bottom: 0.5rem;
-      }
+@media screen and (width<600px) {
+  // styling sticky header on scrolling
 
-      td::before {
-        content: attr(data-cell) ": ";
-        font-weight: 700;
+  .header[sticking="true"] {
+    li {
+      background-color: white;
+      pointer-events: all;
+    }
+    input[type="checkbox"]:checked + ul {
+      li:not(li:first-of-type) {
+        background-color: transparent;
+        pointer-events: none;
+      }
+      animation: ulHeightAnimation 0s forwards 0.3s;
+    }
+
+    li:first-of-type,
+    i {
+      opacity: 0;
+      animation: headerAnimation 0.3s forwards 0.1s;
+      :first-child {
+        opacity: 1;
       }
     }
+    li:first-of-type {
+      background-color: white;
+      box-shadow: 0 0 10px 0px gray;
+    }
+  }
+
+  // Parallax
+  .parallax1 > span > span {
+    display: none;
+  }
+}
+
+@media screen and (width>600px) {
+  .header {
+    > label i:first-of-type {
+      display: none;
+    }
+    > i {
+      display: block;
+    }
+    > i:hover {
+      background-color: orangered;
+    }
+
+    ul {
+      grid-auto-flow: column;
+      justify-content: flex-start;
+      li {
+        background-color: transparent !important;
+        * {
+          opacity: 0.6;
+        }
+      }
+      li:nth-of-type(2) > :first-child::before {
+        content: "\f007";
+        @include fontAwesome;
+      }
+      li:nth-of-type(3) > :first-child::before {
+        @include fontAwesome;
+        content: "\f58d";
+      }
+      li:nth-of-type(4) > :first-child::before {
+        @include fontAwesome;
+        content: "\f0e0";
+      }
+
+      li:last-of-type {
+        display: none;
+      }
+    }
+  }
+
+  // sticky header styling on scrolling
+  .header[sticking="true"] {
+    opacity: 0;
+    box-shadow: 0 0 5px gray;
+    background-color: white;
+    animation: headerAnimation 0.2s forwards 0.1s;
+    li > :first-child {
+      opacity: 1 !important;
+    }
+    i {
+      opacity: 1;
+    }
+  }
+}
+
+// Keyframes
+
+@keyframes headerAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes ulHeightAnimation {
+  0%,
+  100% {
+    height: 3.5rem;
   }
 }

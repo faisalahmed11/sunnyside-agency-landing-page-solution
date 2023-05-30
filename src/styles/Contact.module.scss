@@ -1,0 +1,129 @@
+.contact {
+  color: #555;
+  .parallax {
+    background: #fff4 url("/parallax3.jpg") no-repeat center / cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    color: white;
+    letter-spacing: 0.7rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding-block: 12rem;
+    text-align: center;
+  }
+  > h1 {
+    padding-block: 5rem 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #555d;
+  }
+  .subHeading {
+    display: block;
+    text-align: center;
+    color: #666;
+  }
+  .innerContainer {
+    max-width: 1000px;
+    margin-inline: auto;
+    padding: 3rem 2rem;
+    .map {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    form {
+      .location,
+      .phone,
+      .email {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #888;
+      }
+
+      .location::before,
+      .phone::before,
+      .email::before {
+        display: inline-block;
+        font-weight: bold;
+        font-family: "Font Awesome 6 Free";
+        padding-left: 0.5rem;
+        font-size: 1.25rem;
+        color: #555c;
+        width: 2.5rem;
+        height: 1.8rem;
+      }
+      .location::before {
+        content: "";
+        margin-top: 1rem;
+      }
+      .phone::before {
+        content: "";
+      }
+      .email::before {
+        content: "";
+        margin-bottom: 1rem;
+      }
+
+      > p:last-of-type {
+        padding-bottom: 1.5rem;
+        color: #666;
+      }
+      > input {
+        padding: 0.9rem 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #bbb;
+        width: 100%;
+      }
+      > input:last-of-type {
+        margin-block: 0.5rem 1rem;
+      }
+      > button {
+        display: block;
+        background-color: black;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        font-size: 1.1rem;
+        width: max-content;
+        margin-left: auto;
+
+        padding: 0.7rem 0.8rem;
+        text-transform: uppercase;
+      }
+      > button:hover {
+        color: black;
+        background-color: lightgray;
+      }
+      > button::before {
+        content: "";
+        margin-right: 3px;
+        position: relative;
+        top: 2px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: "Font Awesome 6 Free";
+      }
+    }
+  }
+}
+
+@media screen and (width>600px) {
+  .innerContainer {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+    > form {
+      > input {
+        width: calc(50% - 1.1rem / 2) !important;
+      }
+      > input:first-of-type {
+        margin-right: 1.1rem;
+      }
+      > input:last-of-type {
+        width: 100% !important;
+      }
+    }
+  }
+}
