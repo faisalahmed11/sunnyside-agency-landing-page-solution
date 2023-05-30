@@ -4,6 +4,7 @@
   text-align: center;
   padding-block: 5rem;
   > .toTop {
+
     border: 0;
     cursor: pointer;
     background-color: white;
@@ -37,6 +38,7 @@
   }
   > p:last-of-type > * {
     color: white;
+    padding-inline: .5rem;
   }
 }
 .footer:hover {
