@@ -20,7 +20,7 @@ This is a fully responsive site containing header,main,parallax and footer secti
 
 
 ### Screenshot
-- Note: Screenshots missing some parallax . Can be seen on live site, [Links](#links).
+- Note: Screenshots are missing some parallax effects. Can be seen on live site, [Links](#links).
 
 ![](./public/1.png)
 
