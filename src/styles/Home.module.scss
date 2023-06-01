@@ -118,6 +118,7 @@ $border-clr: lightgray;
 .stats {
   font-size: clamp(3.7rem, 12vw, 6.5rem);
   line-height: clamp(4rem, 12vw, 6.8rem);
+  font-weight: bolder;
   > p {
     letter-spacing: -4px;
   }
