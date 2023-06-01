@@ -34,7 +34,7 @@ This is my solution to Frontend mentor age calculator challenge, this app can ca
 
 
 ### Links
-- Live Site URL: [https://age-calculator.vercel.app/](https://age-calculator.vercel.app/) 
+- Live Site URL: [https://age-calculator-challenge.vercel.app/](https://age-calculator-challenge.vercel.app/) 
 
 ### my-process
 With Frontend learnings it became possible to complete this project, using HTML , Sass and JS, starting with layout of the app, then with HTML and JS I handled all the input validation and age calculator function using new Date object; 
