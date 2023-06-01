@@ -1,185 +1,145 @@
-@mixin fontAwesome {
-  font-size: 1rem;
-  padding: 0.2rem;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-}
+//variables
+$purple: hsl(259, 100%, 65%);
+$font-clr: hsl(0, 1%, 44%);
+$border-clr: lightgray;
 
-// Header
+.main {
+  background-color: hsl(0, 0%, 94%);
+  min-height: 100svh;
+  display: grid;
+  font-family: "Poppins";
+  place-items: center;
+  position: relative;
 
-.header {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  inset-inline: 0;
-  z-index: 123;
-  input[type="checkbox"] {
-    display: none;
-  }
-  input[type="checkbox"]:checked + ul {
-    height: 2.9rem;
-    overflow-y: hidden;
-  }
-
-  > i {
-    display: none;
-  }
-  i {
+  >p{
+    // display: block;
     position: absolute;
-    right: 0;
-    top: 0;
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    padding: 1rem 1.2rem;
-    cursor: pointer;
-    opacity: 0.5;
+    bottom: 1rem;
+    // z-index: 1321;
+// inset-inline:10%;
   }
+}
 
-  i:hover {
-    opacity: 1;
-    background-color: black;
-    color: white;
-  }
+.ageCounter {
+  background-color: white;
+  width: 95%;
+  max-width: 53rem;
+  padding: 3.5rem clamp(1.5rem, 3vw, 3.5rem);
+  border-radius: 1.5rem 1.5rem clamp(7rem, 19vw, 11.5rem) 1.5rem;
+}
 
-  ul {
-    list-style: none;
-    display: grid;
+.inputsContainer {
+  display: flex;
+  gap: 4%;
+  > div {
+    display: flex;
     position: relative;
-    text-transform: uppercase;
-    font-size: 1.02rem;
-    li {
-      background-color: white;
+    flex-direction: column;
+    > label {
+      color: $font-clr;
+      letter-spacing: 3px;
+      padding-bottom: 0.5rem;
+      font-size: 0.85rem;
     }
+    > input {
+      border: 1px solid $border-clr;
+      width: clamp(6rem, 17vw, 10rem);
+      font-size: clamp(1.2rem, 3vw, 1.9rem);
 
-    li:first-child {
-      background-color: transparent;
+      border-radius: 0.5rem;
+      padding: 1rem 1.3rem;
+      font-weight: 600;
     }
-    li:first-child > :first-child {
-      width: max-content;
-      opacity: 0.6;
-    }
-    li > :first-child {
-      display: block;
-      color: black;
-      padding: 0.8rem 1rem;
-      text-decoration: none;
-    }
-    li > :first-child:hover {
-      opacity: 1;
-      background-color: lightgray;
-    }
-  }
-}
-
-// Media Queries
-
-@media screen and (width<600px) {
-  // styling sticky header on scrolling
-
-  .header[sticking="true"] {
-    li {
-      background-color: white;
-      pointer-events: all;
-    }
-    input[type="checkbox"]:checked + ul {
-      li:not(li:first-of-type) {
-        background-color: transparent;
-        pointer-events: none;
-      }
-      animation: ulHeightAnimation 0s forwards 0.3s;
-    }
-
-    li:first-of-type,
-    i {
-      opacity: 0;
-      animation: headerAnimation 0.3s forwards 0.1s;
-      :first-child {
-        opacity: 1;
-      }
-    }
-    li:first-of-type {
-      background-color: white;
-      box-shadow: 0 0 10px 0px gray;
-    }
-  }
-
-  // Parallax
-  .parallax1 > span > span {
-    display: none;
-  }
-}
-
-@media screen and (width>600px) {
-  .header {
-    > label i:first-of-type {
+    > p {
       display: none;
     }
-    > i {
+
+    > input:focus,
+    > input:hover {
+      border: 1px solid $purple;
+    }
+    > input:placeholder-shown {
+      color: #333;
+    }
+  }
+
+  > div[invalid="true"] {
+    > label {
+      color: red !important;
+    }
+    > input {
+      border: 1px solid red;
+    }
+    > p {
       display: block;
-    }
-    > i:hover {
-      background-color: orangered;
-    }
-
-    ul {
-      grid-auto-flow: column;
-      justify-content: flex-start;
-      li {
-        background-color: transparent !important;
-        * {
-          opacity: 0.6;
-        }
-      }
-      li:nth-of-type(2) > :first-child::before {
-        content: "\f007";
-        @include fontAwesome;
-      }
-      li:nth-of-type(3) > :first-child::before {
-        @include fontAwesome;
-        content: "\f58d";
-      }
-      li:nth-of-type(4) > :first-child::before {
-        @include fontAwesome;
-        content: "\f0e0";
-      }
-
-      li:last-of-type {
-        display: none;
-      }
-    }
-  }
-
-  // sticky header styling on scrolling
-  .header[sticking="true"] {
-    opacity: 0;
-    box-shadow: 0 0 5px gray;
-    background-color: white;
-    animation: headerAnimation 0.2s forwards 0.1s;
-    li > :first-child {
-      opacity: 1 !important;
-    }
-    i {
-      opacity: 1;
+      color: red;
+      bottom: -25px;
+      position: absolute;
     }
   }
 }
 
-// Keyframes
-
-@keyframes headerAnimation {
-  0% {
-    transform: translateY(-50px);
-    opacity: 1;
+.arrowContainer {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (width<390px) {
+    // display: inline;
+    justify-content: center;
   }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
+  > button {
+    border: 0;
+    background-color: transparent;
+    margin-block: 2rem;
+  }
+}
+.hr {
+  height: 1px;
+  background-color: $border-clr;
+  position: absolute;
+  width: 100%;
+  inset-block: 50%;
+  z-index: -312;
+}
+.arrow {
+  cursor: pointer;
+  display: block;
+  background-color: $purple;
+  max-width: clamp(60px, 10vw, 90px);
+  height: auto;
+  border-radius: 50%;
+  padding: clamp(0.9rem, 3vw, 1.6rem);
+}
+.arrow:hover,
+.arrowContainer > button:focus > .arrow {
+  background-color: black;
+}
+.stats {
+  font-size: clamp(3.7rem, 12vw, 6.5rem);
+  line-height: clamp(4rem, 12vw, 6.8rem);
+  > p {
+    letter-spacing: -4px;
   }
 }
 
-@keyframes ulHeightAnimation {
-  0%,
-  100% {
-    height: 3.5rem;
-  }
+.stats > p > span {
+  color: $purple;
+}
+
+.stats > p > span[empty="true"] {
+  display: inline-grid;
+  place-items: center;
+  width: 1.3em;
+  height: 0.16em;
+  background-color: $purple;
+}
+.stats > p > span[empty="true"]::before {
+  content: "";
+  display: block;
+  transform: rotateZ(10deg);
+  height: 160%;
+  width: 25%;
+  margin-bottom: 0.5em;
+  background-color: white;
 }
