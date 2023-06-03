@@ -1,146 +1,210 @@
-//variables
-$purple: hsl(259, 100%, 65%);
-$font-clr: hsl(0, 1%, 44%);
-$border-clr: lightgray;
+@import "variables";
 
-.main {
-  background-color: hsl(0, 0%, 94%);
-  min-height: 100svh;
-  display: grid;
-  font-family: 'Poppins', sans-serif;;
-  place-items: center;
-  position: relative;
-
-  >p{
-    // display: block;
-    position: absolute;
-    bottom: 1rem;
-    // z-index: 1321;
-// inset-inline:10%;
+// Section1
+.section1 {
+  text-align: center;
+  font-size: 18px;
+  > * {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
-
-.ageCounter {
-  background-color: white;
-  width: 95%;
-  max-width: 53rem;
-  padding: 3.5rem clamp(1.5rem, 3vw, 3.5rem);
-  border-radius: 1.5rem 1.5rem clamp(7rem, 19vw, 11.5rem) 1.5rem;
-}
-
-.inputsContainer {
-  display: flex;
-  gap: 4%;
-  > div {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    > label {
-      color: $font-clr;
-      letter-spacing: 3px;
-      padding-bottom: 0.5rem;
-      font-size: 0.85rem;
-    }
-    > input {
-      border: 1px solid $border-clr;
-      width: clamp(6rem, 17vw, 10rem);
-      font-size: clamp(1.2rem, 3vw, 1.9rem);
-
-      border-radius: 0.5rem;
-      padding: 1rem 1.3rem;
-      font-weight: 600;
-    }
-    > p {
-      display: none;
-    }
-
-    > input:focus,
-    > input:hover {
-      border: 1px solid $purple;
-    }
-    > input:placeholder-shown {
-      color: #333;
-    }
+.section1Part2 {
+  padding: 3.8rem 1.55rem;
+  font-family: $Barlow;
+  max-width: 50ch;
+  margin-inline: auto;
+  > h2 {
+    font-family: $Fraunces;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 3rem;
+    max-width: 15ch;
+    margin-inline: auto;
+    color: $darkBlue;
   }
 
-  > div[invalid="true"] {
-    > label {
-      color: red !important;
-    }
-    > input {
-      border: 1px solid red;
-    }
-    > p {
-      display: block;
-      color: red;
-      bottom: -25px;
-      position: absolute;
-    }
-  }
-}
-
-.arrowContainer {
-  position: relative;
-  isolation: isolate;
-  display: flex;
-  justify-content: flex-end;
-  @media screen and (width<390px) {
-    // display: inline;
-    justify-content: center;
+  > p {
+    color: $dark-grayish-blue;
+    line-height: 1.85rem;
+    padding-block: 2rem;
   }
   > button {
+    text-transform: uppercase;
+    font-family: $Fraunces;
+    color: $darkBlue;
     border: 0;
-    background-color: transparent;
-    margin-block: 2rem;
+    font-weight: 900;
+    font-size: 1rem;
+    padding-inline: 0.3rem;
+    cursor: pointer;
+    background: #fff8 linear-gradient(to bottom, white 50%, $yellow);
+    background-blend-mode: overlay;
+  }
+  > button:hover,
+  > button:focus {
+    background-color: #fff1;
   }
 }
-.hr {
-  height: 1px;
-  background-color: $border-clr;
-  position: absolute;
-  width: 100%;
-  inset-block: 50%;
-  z-index: -312;
+
+.section1Part4 {
+  @extend .section1Part2;
+  > h2 {
+    max-width: 17ch;
+  }
+  > button {
+    background-image: linear-gradient(to bottom, white 50%, $softRed);
+  }
 }
-.arrow {
-  cursor: pointer;
-  display: block;
-  background-color: $purple;
-  max-width: clamp(60px, 10vw, 90px);
+
+.section1Part5 {
+  background: url("/mobile/image-graphic-design.jpg") no-repeat center / cover;
+  padding-top: min(119.5vw, 30.5rem);
+  color: $graphic-text-clr;
+  padding-inline: 1rem;
+  font-size: 1rem;
+  > h3 {
+    font-weight: 900;
+    font-family: $Fraunces;
+    font-size: 1.7rem;
+  }
+  > p {
+    font-family: $Barlow;
+    line-height: 1.7rem;
+    padding-block: 1.75rem min(5vw, 3.7rem);
+    max-width: 40ch;
+    margin-inline: auto;
+  }
+}
+.section1Part6 {
+  @extend .section1Part5;
+  background-image: url("/mobile/image-photography.jpg");
+  color: $photog-text-clr;
+}
+
+// Section2
+
+.section2 {
+  text-align: center;
+  font-size: 18px;
+  font-family: $Barlow;
+  padding: 4rem 1.5rem 5.5rem;
+  > div {
+    display: grid;
+    column-gap: 1rem;
+  }
+}
+.card {
+  margin-top: 4rem;
+}
+.cardText {
+  line-height: 1.9rem;
+  color: $v-dark-grayish-blue;
+  max-width: 34ch;
+  margin-inline: auto;
+  margin-block: 2.1rem;
+}
+.title {
+  font-family: $Fraunces;
+  color: $grayish-blue;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.cardImage {
+  width: 72px;
   height: auto;
   border-radius: 50%;
-  padding: clamp(0.9rem, 3vw, 1.6rem);
 }
-.arrow:hover,
-.arrowContainer > button:focus > .arrow {
-  background-color: black;
+.cardName {
+  font-family: $Fraunces;
+  font-weight: 900;
+  font-size: 1.1rem;
+  margin-bottom: 0.9rem;
 }
-.stats {
-  font-size: clamp(3.7rem, 12vw, 6.5rem);
-  line-height: clamp(4rem, 12vw, 6.8rem);
-  font-weight: bolder;
-  > p {
-    letter-spacing: -4px;
+.cardDesignation {
+  color: $grayish-blue;
+  font-size: 0.9rem;
+}
+
+// Section 3
+.section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  > * {
+    width: 100%;
+    height: auto;
   }
 }
 
-.stats > p > span {
-  color: $purple;
-}
+// only desktop
+@media screen and (width>600px) {
+  // Section 1
+  .section1Part5 {
+    background-image: url("/desktop/image-graphic-design.jpg");
+    padding-top: max(13rem, 27.5vw);
+  }
+  .section1Part6 {
+    background-image: url("/desktop/image-photography.jpg");
+  }
 
-.stats > p > span[empty="true"] {
-  display: inline-grid;
-  place-items: center;
-  width: 1.3em;
-  height: 0.16em;
-  background-color: $purple;
-}
-.stats > p > span[empty="true"]::before {
-  content: "";
-  display: block;
-  transform: rotateZ(10deg);
-  height: 160%;
-  width: 25%;
-  margin-bottom: 0.5em;
-  background-color: white;
+  .section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    > * {
+      height: 100%;
+    }
+  }
+
+  .section1Part2 {
+    order: -1;
+    text-align: left;
+    padding-left: min(6vw, 5.5rem);
+    max-width: 35rem;
+    height: max-content;
+    margin: auto;
+
+    > h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      max-width: 16ch;
+      margin: 0;
+    }
+    > p {
+      padding-block: 2rem 2.5rem;
+    }
+
+    > button {
+      margin: 0;
+    }
+  }
+
+  .section1Part4 {
+    order: 0;
+    padding-left: min(3vw, 2.1rem);
+    > p {
+      max-width: 45ch;
+    }
+  }
+
+  // Section 2
+  .section2 {
+    padding: min(12vw, 10rem) min(10vw, 9rem);
+    > div {
+      margin-top: 1.1rem;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .cardText {
+    margin-block: 3.4rem 4.5rem;
+  }
+  .title {
+    font-size: 1.1rem;
+  }
+
+  // Section 3
+  .section3 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
