@@ -32,7 +32,7 @@ This is my solution to Frontend mentor Sunnyside agency landing page challenge, 
 
 
 ### Links
-- Live Site URL: [https://sunnyside-agency-challenge.vercel.app/](https://sunnyside-agency-challenge.vercel.app/) 
+- Live Site URL: [https://sunnyside-agency-challengee.vercel.app/](https://sunnyside-agency-challengee.vercel.app/) 
 
 ### my-process
 With Frontend learnings it became possible to complete this project, using HTML , Sass and JS, starting with layout of the app, then with HTML and JS I handled all the input validation and age calculator function using new Date object; 
