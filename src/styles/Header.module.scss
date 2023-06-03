@@ -1,4 +1,6 @@
 @import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 .header {
   background: url("/desktop/image-header.jpg") no-repeat top/cover;
   @media screen and (width<400px) {
@@ -6,7 +8,7 @@
   }
   min-height: clamp(34.5rem, 55.6vw, 55rem);
   color: white;
-  font-family: "Barlow", sans-serif;
+  font-family: Barlow, sans-serif;
   > input {
     display: none;
   }
@@ -50,7 +52,7 @@
     .navContact {
       color: black;
       text-transform: uppercase;
-      font-family: "Fraunces", serif;
+      font-family: Fraunces, serif;
       background-color: white;
       padding: 1.1rem 1.7rem;
       font-size: 1rem;
@@ -65,7 +67,7 @@
 
 .title {
   text-align: center;
-  font-family: "Fraunces", serif;
+  font-family: Fraunces, serif;
   font-size: clamp(2.5rem, 5vw, 3.6rem);
   letter-spacing: 9px;
   margin-top: clamp(2.5rem, 4.5vw, 5.5rem);

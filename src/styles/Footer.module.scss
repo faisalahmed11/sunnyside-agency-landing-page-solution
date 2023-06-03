@@ -1,8 +1,9 @@
 @import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 .footer {
   background-color: $moderateCyan;
   padding: 4rem 4rem;
-  font-family: "Barlow", sans-serif;
+  font-family: Barlow, sans-serif;
 }
 .logo1 {
   display: block;
