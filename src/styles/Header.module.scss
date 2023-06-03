@@ -71,6 +71,7 @@
   font-size: clamp(2.5rem, 5vw, 3.6rem);
   letter-spacing: 9px;
   margin-top: clamp(2.5rem, 4.5vw, 5.5rem);
+  background-color: red;
   text-transform: uppercase;
 }
 
@@ -91,7 +92,7 @@
       > button {
         display: block;
       }
-
+      
       > ul {
         transform: scaleY(0);
         transition: transform 0.4s linear;
